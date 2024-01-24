@@ -1,170 +1,275 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
-    th,
-    td {
-      padding: 5px;
+    body {
+      padding: 16px;
+      background-color: #f5f5f5;
     }
 
-    table {
-      border-collapse: collapse;
+    img {
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: auto auto;
+    }
+
+    h1,
+    p {
+      margin: 4px 0px;
+    }
+
+    h1 {
+      color: #333;
     }
 
     ul {
-      list-style-type: square;
+      padding: 0px 0px 0px 30px;
+      margin: 8px 0px;
     }
 
-    tr {
-      border-top: 2px solid #000;
+    .main-container {
+      width: 740px;
+      display: flex;
+      flex-direction: column;
     }
 
-    .right {
-      float: right;
+    .row {
+      display: flex;
+      gap: 8px;
+      padding: 8px 0px;
     }
 
-    .gray {
-      color: dimgray;
+    .row-left {
+      display: flex;
+      justify-content: center;
+      min-width: 170px;
+      font-weight: 700;
     }
 
+    .row-right {}
+
+    .with-border {
+      border-top: 1px solid #ccc;
+    }
+
+    .gray-text,
     a {
-      color: dimgray;
+      color: #777;
+      font-style: italic;
+    }
+
+    .section-title {
+      font-weight: 600;
+      font-size: large;
+    }
+
+    .topic-title {
+      font-size: larger;
+    }
+
+    .contact-info {
+      font-size: smaller;
     }
   </style>
 </head>
 
 <body>
-  <table>
-    <tr style="border-top: 0px">
-      <td class="right"><img src="profile.jpeg" alt="Profile picture" width="150" height="150" /></td>
-      <td style="width: 600px">
-        <span style="font-size: x-large"><b>Sara Cristina Ferreira</b></span><br />
-        <span class="gray"><i>Frontend developer in Campo Largo, Paraná, Brazil</i></span><br />
-        <span class="gray">
-          <i>
-            <a href="mailto:ferreirasara1501@gmail.com" target="_blank">ferreirasara1501@gmail.com</a>
-            <span> | </span>
-            <a href="https://github.com/ferreirasara" target="_blank">GitHub</a>
-            <span> | </span>
-            <span>
-              <a href="tel:+5541999008804">+55 41999008804</a>
-            </span>
-            <span> | </span>
-            <a href="https://t.me/ferreirasara" target="_blank">https://t.me/ferreirasara</a>
-          </i>
-        </span>
+  <div class="main-container">
+    <div class="row">
+      <div class="row-left">
+        <img src="profile.jpeg" alt="Profile picture" />
+      </div>
+      <div class="row-right">
+        <h1>Sara Cristina Ferreira</h1>
+        <p class="gray-text">Frontend developer in Campo Largo, Paraná, Brazil</p>
+        <div class="gray-text contact-info">
+          <a href="mailto:ferreirasara1501@gmail.com" target="_blank">ferreirasara1501@gmail.com</a>
+          <span> | </span>
+          <a href="https://github.com/ferreirasara" target="_blank">GitHub</a>
+          <span> | </span>
+          <a href="tel:+5541999008804">+55 41999008804</a>
+          <span> | </span>
+          <a href="https://t.me/ferreirasara" target="_blank">https://t.me/ferreirasara</a>
+        </div>
         <p>
-          Sara got interested in computing when as a child. Graduated in Computer Science and have been working with
-          development for more than four years. On whatever project Sara works on, automated testing and comprehensive
-          code are
-          priorities. Sara has experience at both frontend and backend but prefers to work with frontend, ideally in a
-          remote role.
+          Sara's passion for computing began in childhood, leading her to earn a degree in Computer Science. With 5
+          years of experience in development, she prioritizes automated testing and meticulous code craftsmanship.
+          Proficient in both frontend and backend, Sara's preference is frontend development, especially in a remote
+          setting. Her commitment to excellence and attention to detail make her a valuable asset in creating
+          outstanding user experiences.
         </p>
-      </td>
-    </tr>
-    <tr>
-      <td class="right"><b>Skills</b></td>
-      <td>Node.js, JavaScript, TypeScript, React, Vue, Shopify, Git, Express.js, GraphQL, Prisma, MongoDB, SQL, CSS,
-        REST API, Python
-      </td>
-    </tr>
-    <tr>
-      <td class="right"><b>Work History</b></td>
-      <td>
-        <span class="gray"><i>Full Stack Developer | 05/2023 - At the moment | Firefly</i></span>
+      </div>
+    </div>
+    <div class="row with-border">
+      <div class="row-left">
+        <p class="section-title"><i class="bi-code"></i> Skills</p>
+      </div>
+      <div class="row-right">
+        <p>React, TypeScript, Node.js, JavaScript, Vue, Git, Express.js, GraphQL, Prisma, MongoDB, SQL, CSS,
+          REST API, Shopify, Python</p>
+      </div>
+    </div>
+    <div class="row with-border">
+      <div class="row-left">
+        <p class="section-title"><i class="bi-briefcase"></i> Work History</p>
+      </div>
+      <div class="row-right">
+        <p class="gray-text topic-title">Full Stack Developer | 05/2023 - At the moment | Firefly</p>
         <ul>
-          <li>Integration with CRM systems.</li>
-          <li>Development of backend GraphQL queries and mutations.</li>
-          <li>Database integration with Prisma ORM.</li>
-          <li>CRUD development using React.</li>
-          <li>Utilization of React Hooks with GraphQL queries and mutations.</li>
-          <li>Performance improvements of Web pages by optimization of GraphQL queries.</li>
-          <li>Development of chatbot conversation flows.</li>
-          <li>Created Jest test cases.</li>
-          <li>Utilization of TypeScript at both frontend and backend.</li>
-          <li>Pagination and sorting on queries.</li>
-          <li>Importing and normalizing data from real estate databases.</li>
-          <li>Created GitLab pipelines to run tests.</li>
-          <li>Remote worker.</li>
+          <li>Implemented seamless integration with CRM systems to enhance data flow and user experience.</li>
+          <li>Spearheaded the development of efficient backend GraphQL queries and mutations, ensuring optimal
+            performance.</li>
+          <li>Successfully integrated databases using the Prisma ORM, fostering robust data management.</li>
+          <li>Proficiently handled CRUD operations in React, contributing to a responsive and dynamic user
+            interface.
+          </li>
+          <li>Leveraged React Hooks in conjunction with GraphQL queries and mutations for streamlined functionality.
+          </li>
+          <li>Enhanced web page performance by strategically optimizing GraphQL queries, resulting in improved user
+            responsiveness.</li>
+          <li>Developed intricate chatbot conversation flows, enhancing user engagement and interaction.</li>
+          <li>Created comprehensive Jest test cases, ensuring the reliability and stability of the codebase.</li>
+          <li>Implemented TypeScript across both frontend and backend, promoting code integrity and scalability.
+          </li>
+          <li>Implemented pagination and sorting on queries, facilitating efficient data retrieval and presentation.
+          </li>
+          <li>Successfully imported and normalized data from real estate databases, enriching the platform's
+            content.
+          </li>
+          <li>Established GitLab pipelines to automate test execution, ensuring a consistent and reliable
+            development
+            process.</li>
+          <li>Optimized React components for superior performance, contributing to an overall enhanced user
+            interface.
+          </li>
+          <li>Conducted thorough component refactoring to improve code maintainability and readability.</li>
+          <li>Efficiently managed responsibilities as a remote worker, maintaining productivity and collaboration
+            within
+            a distributed team.</li>
         </ul>
-        <span class="gray"><i>Frontend Developer | 11/2022 - 04/2023 | Miggos</i></span>
+        <p class="gray-text topic-title">Frontend Developer | 11/2022 - 04/2023 | Miggos</p>
         <ul>
-          <li>Creation of new Vue components using Figma mockups.</li>
-          <li>Use of Storefront UI components.</li>
-          <li>Use of CSS to customize Storefront UI components.</li>
-          <li>Use of GIT for version control.</li>
-          <li>Use of server rendering Nuxt.js for Vue.</li>
-          <li>Utilization of Auth0 SDK in authorization flows.</li>
-          <li>Development of an Shopify app.</li>
-          <li>Use of TypeScript.</li>
-          <li>Agile development.</li>
-          <li>Remote work.</li>
+          <li>Developed new Vue components by translating Figma mockups into functional and visually appealing elements.
+          </li>
+          <li>Employed Storefront UI components to enhance the overall design and user interface of the application.
+          </li>
+          <li>Applied CSS customization to tailor Storefront UI components, ensuring a cohesive and branded visual
+            identity.</li>
+          <li>Utilized GIT for seamless version control, fostering collaborative and organized development practices.
+          </li>
+          <li>Implemented server rendering with Nuxt.js for Vue, optimizing performance and user experience.</li>
+          <li>Incorporated Auth0 SDK in authorization flows, enhancing security measures and user authentication
+            processes.</li>
+          <li>Successfully crafted a Shopify app, contributing to an extended ecosystem of functionalities and
+            integrations.</li>
+          <li>Leveraged TypeScript for enhanced code quality, type safety, and improved overall development efficiency.
+          </li>
+          <li>Adhered to Agile development methodologies, ensuring adaptability, collaboration, and timely project
+            delivery.</li>
+          <li>Thrived in a remote work environment, showcasing effective communication and productivity within a
+            distributed team.</li>
         </ul>
-        <span class="gray"><i>Frontend Developer | 06/2022 - 11/2022 | Livus</i></span>
+        <p class="gray-text topic-title">Frontend Developer | 06/2022 - 11/2022 | Livus</p>
         <ul>
-          <li>Creation of new React components using Figma mockups.</li>
-          <li>Created unit test cases using Jest.</li>
-          <li>Created integration tests cases using Cypress.</li>
-          <li>Utilization of Material UI components.</li>
-          <li>Utilization of CSS to customize MUI components.</li>
-          <li>Utilization of GIT to version control.</li>
-          <li>Utilization of server rendering Next.js for React.</li>
-          <li>Utilization of TypeScript.</li>
-          <li>Agile development.</li>
-          <li>Remote worker.</li>
+          <li>Crafted innovative React components, seamlessly translating Figma mockups into visually appealing and
+            functional elements.</li>
+          <li>Developed comprehensive unit test cases using Jest, ensuring the robustness and reliability of the React
+            components.</li>
+          <li>Implemented rigorous integration test cases with Cypress, validating the seamless interaction and
+            functionality of the application.</li>
+          <li>Leveraged Material UI components for a polished and responsive user interface, enhancing the overall
+            design aesthetic.</li>
+          <li>Applied CSS to customize Material UI components, ensuring a tailored and cohesive visual identity aligned
+            with project requirements.</li>
+          <li>Utilized GIT for effective version control, promoting collaborative and organized development practices.
+          </li>
+          <li>Implemented server rendering with Next.js for React, optimizing performance and elevating the user
+            experience.</li>
+          <li>Integrated TypeScript to enhance code quality, promote type safety, and streamline the overall development
+            process.</li>
+          <li>Embraced Agile development methodologies, fostering adaptability, collaboration, and the timely delivery
+            of project milestones.</li>
+          <li>Demonstrated effectiveness as a remote worker, maintaining clear communication and productivity within a
+            distributed team.</li>
         </ul>
-        <span class="gray"><i>Full Stack Developer | 10/2020 - 05/2022 | Firefly</i></span>
+        <p class="gray-text topic-title">Full Stack Developer | 10/2020 - 05/2022 | Firefly</p>
         <ul>
-          <li>Integration with CRM systems.</li>
-          <li>Development of backend GraphQL queries and mutations.</li>
-          <li>Database integration with Prisma ORM.</li>
-          <li>CRUD development using React.</li>
-          <li>Utilization of React Hooks with GraphQL queries and mutations.</li>
-          <li>Performance improvements of Web pages by optimization of GraphQL queries.</li>
-          <li>Development of chatbot conversation flows.</li>
-          <li>Created Jest test cases.</li>
-          <li>Utilization of TypeScript at both frontend and backend.</li>
-          <li>Pagination and sorting on queries.</li>
-          <li>Importing and normalizing data from real estate databases.</li>
-          <li>Remote worker.</li>
+          <li>Seamlessly integrated with CRM systems to enhance data flow and user interactions.</li>
+          <li>Developed sophisticated backend GraphQL queries and mutations for efficient data handling.</li>
+          <li>Integrated databases using Prisma ORM, ensuring a robust and scalable data management system.</li>
+          <li>Implemented CRUD operations using React, contributing to a responsive and dynamic user interface.</li>
+          <li>Applied React Hooks in tandem with GraphQL queries and mutations, optimizing functionality and code
+            structure.</li>
+          <li>Significantly boosted web page performance by fine-tuning GraphQL queries for optimal efficiency.</li>
+          <li>Crafted intricate chatbot conversation flows, elevating user engagement and interaction.</li>
+          <li>Created comprehensive Jest test cases, ensuring the reliability and stability of the codebase.</li>
+          <li>Leveraged TypeScript across both frontend and backend for enhanced code quality and scalability.</li>
+          <li>Implemented pagination and sorting on queries, facilitating efficient data retrieval and presentation.
+          </li>
+          <li>Successfully imported and normalized data from real estate databases, enriching platform content.</li>
+          <li>Thrived as a remote worker, maintaining productivity and collaboration within a distributed team.</li>
         </ul>
-        <span class="gray"><i>Web Development (Trainee) | 12/2019 - 09/2020 | ACOM Sistemas</i></span>
+        <p class="gray-text topic-title">Web Development (Trainee) | 12/2019 - 09/2020 | ACOM Sistemas</p>
         <ul>
-          <li>Creation and maintenance of SQLServer procedures and tables.</li>
-          <li>Maintenance of CRM, ERP, SCM e CLM systems.</li>
-          <li>Development of new screens and features for ERP, SCM and CLM systems using Javascript.</li>
-          <li>Deployment of updates using tomcat for CRM, ERP, SCM and CLM.</li>
-          <li>API documentation for SCM system.</li>
+          <li>Designed and maintained SQLServer procedures and tables, ensuring a robust and efficient database
+            structure.</li>
+          <li>Oversaw the maintenance of CRM, ERP, SCM, and CLM systems, guaranteeing their continuous functionality and
+            performance.</li>
+          <li>Spearheaded the development of innovative screens and features for ERP, SCM, and CLM systems using
+            JavaScript, enhancing overall system capabilities.</li>
+          <li>Executed seamless deployment of updates through Tomcat for CRM, ERP, SCM, and CLM systems, minimizing
+            downtime and optimizing system performance.</li>
+          <li>Authored comprehensive API documentation for the SCM system, providing clear and detailed insights into
+            system functionalities for effective integration and usage.</li>
         </ul>
-        <span class="gray"><i>Tester (Internship) | 03/2019 - 11/2019 | ACOM Sistemas</i></span>
+        <p class="gray-text topic-title">Tester (Internship) | 03/2019 - 11/2019 | ACOM Sistemas</p>
         <ul>
-          <li>Unit tests, integration tests and functional tests.</li>
-          <li>Procedures revision.</li>
+          <li>Implemented a comprehensive testing strategy encompassing unit tests, integration tests, and functional
+            tests to ensure the reliability and functionality of the codebase.</li>
+          <li>Conducted thorough procedures revision, ensuring that processes are up-to-date, efficient, and aligned
+            with best practices.</li>
         </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="right"><b>Education</b></td>
-      <td>
-        <span class="gray"><i>Computer Science | Universidade Tuiuti do Paraná (UTP)</i></span>
+      </div>
+    </div>
+    <div class="row with-border">
+      <div class="row-left">
+        <p class="section-title"><i class="bi-mortarboard"></i> Education</p>
+      </div>
+      <div class="row-right">
+        <p class="gray-text topic-title">Bachelor's Degree in Computer Science | Universidade Tuiuti do Paraná</p>
         <ul>
           <li>Entry in 2018.1 and completion in 2021.2</li>
           <li>PR (Performance Ratio): 8.8</li>
         </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="right"><b>Languages</b></td>
-      <td>
+        <p class="gray-text topic-title">Postgraduate Degree In User Experience - UX | Universidade Tuiuti do Paraná
+        </p>
         <ul>
-          <li>Portuguese: Fluent reading, writing, listening and speaking.</li>
-          <li>English: Advanced reading, writing and listening. Intermediate speaking.</li>
+          <li>Entry in 2023.10 and completion in 2024.3</li>
         </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="right"><b>Personal Portfolio</b></td>
-      <td>
+      </div>
+    </div>
+    <div class="row with-border">
+      <div class="row-left">
+        <p class="section-title"><i class="bi-translate"></i> Languages</p>
+      </div>
+      <div class="row-right">
+        <p class="gray-text topic-title">Portuguese</p>
+        <ul>
+          <li>Fluent reading, writing, listening and speaking.</li>
+        </ul>
+        <p class="gray-text topic-title">English</p>
+        <ul>
+          <li>Advanced reading, writing and listening. Intermediate speaking.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row with-border">
+      <div class="row-left">
+        <p class="section-title"><i class="bi-person"></i> Personal Portfolio</p>
+      </div>
+      <div class="row-right">
         <ul>
           <li>
             Web application developed as final paper. This application is a simulator for page replacement algorithms.
@@ -196,9 +301,9 @@
             </ul>
           </li>
         </ul>
-      </td>
-    </tr>
-  </table>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
